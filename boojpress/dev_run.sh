@@ -1,0 +1,10 @@
+docker run \
+	--name boojpress_live \
+	-e WP_DB_USER=dbadmin \
+	-e WP_DB_PASS="@ctive54~dbdb" \
+	-e WP_PREFIX=wp_ \
+	-e WP_DB_NAME=blog_slifer \
+	-e WP_THEME=ebby \
+	-e WP_DB_HOST=192.168.7.78 \
+	-v /data/wordpress/uploads//_plugins/:/var/www/wordpress/wp-content/plugins \
+	-p 8002:80 boojpress_l
